@@ -2,20 +2,22 @@ package org.chrisferdev.ejemplos.set;
 
 import org.chrisferdev.ejemplos.modelo.Alumno;
 
+import java.util.HashSet;
 import java.util.Set;
-import java.util.TreeSet;
 
-public class EjemploTreeSetComparable {
+public class EjemploHashSetUnicidad {
     public static void main(String[] args) {
 
-        Set<Alumno> sa = new TreeSet<>((a, b) -> b.getNota().compareTo(a.getNota()));
+        Set<Alumno> sa = new HashSet<>();
         sa.add(new Alumno("Pato", 5));
         sa.add(new Alumno("Cata", 6));
         sa.add(new Alumno("Luci", 4));
         sa.add(new Alumno("Jano", 7));
         sa.add(new Alumno("Andres", 3));
+        sa.add(new Alumno("Zeus2", 2));
         sa.add(new Alumno("Zeus", 2));
-        sa.add(new Alumno("Zeus", 8));
+        sa.add(new Alumno("Lucas", 2));
+        sa.add(new Alumno("Lucas", 3));
 
         System.out.println(sa);
     }
