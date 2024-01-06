@@ -1,4 +1,4 @@
-package org.chrisferdev.ejemplos.set;
+package org.chrisferdev.ejemplos.list;
 
 import org.chrisferdev.ejemplos.modelo.Alumno;
 
